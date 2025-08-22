@@ -15,7 +15,7 @@ DESCRIPTION = ""
 
 URL = "https://github.com/facebookresearch/dinov3"
 AUTHOR = "Meta AI"
-REQUIRES_PYTHON = ">=3.11"
+REQUIRES_PYTHON = ">=3.10"
 HERE = Path(__file__).parent
 
 
@@ -61,7 +61,7 @@ setup(
     author=AUTHOR,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=find_packages(),
+    packages=['dinov3'],
     package_data={
         "": ["*.yaml"],
     },
